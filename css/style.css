@@ -112,7 +112,10 @@ html, body {
     position: absolute;
     top: 0.5%;
     left: 50%;                   
-    transform: translateX(-50%);  
+    transform: translateX(-50%);
+    max-width: 100%;
+    width: auto;
+    box-sizing: border-box;  
   }
 
   .main-content {
