@@ -118,7 +118,7 @@ html, body {
   .main-content {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100dvh;
   }
 
   .map,
@@ -165,7 +165,7 @@ html, body {
 
   @media (max-width: 768px) {
     .chart-wrapper {
-      width: 75vw;
+      width: 95vw;
     }
   }
   .map-wrapper svg,
