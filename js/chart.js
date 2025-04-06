@@ -156,7 +156,7 @@ import { highlightCounties, unhighlightCounties } from './map.js';
             .attr("x", margin.left)
             .attr("y", 20)
             .attr("text-anchor", "start")
-            .style("font-size", "1rem")
+            .style("font-size", "0.75rem")
             .text(titleText);
     
         // data source link

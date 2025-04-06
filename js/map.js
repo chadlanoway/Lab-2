@@ -31,7 +31,7 @@ export function setMap() {
       .center([0, 44.6])
       .parallels([42, 195])
       .scale(4000)
-      .translate([svgWidth / 2, svgHeight / 2 - 30]);
+      .translate([svgWidth / 2, svgHeight / 2 - 50]);
 
     // set path generator
     state.path = d3.geoPath().projection(state.projection);

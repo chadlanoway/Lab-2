@@ -139,7 +139,7 @@ import { setChart } from './chart.js';
             .attr("class", "titleOption")
             .attr("disabled", true)
             .attr("selected", true)
-            .text("2025 Wisconsin Health Indicators");
+            .text("Choose a 2025 Wisconsin Health Indicator");
     
         // add options for each attribute
         dropdown.selectAll("option.attrOption")
