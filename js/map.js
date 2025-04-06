@@ -1,5 +1,5 @@
 import { state } from './main.js'
-import { callback, formatNumber } from "./data.js?v1";
+import { callback, formatNumber } from "./data.js?v2";
 
 /**
      * Set up choropleth map

@@ -122,13 +122,13 @@ html, body {
     appearance: none;
     -webkit-appearance: none; /* for Safari */
     -moz-appearance: none;    /* for Firefox */
-    background-color: rgba(255, 255, 255, 0.85); /* white with 70% opacity */
+    background-color: rgba(255, 255, 255, 0.85); 
     border: 1px solid #ccc;
     padding: 0.5em;
     border-radius: 6px;
     font-size: 1rem;
     color: #333;
-    backdrop-filter: blur(4px); /* optional for a frosted-glass effect */
+    backdrop-filter: blur(4px);
   }
   
   .main-content {
