@@ -1,5 +1,5 @@
 import { state } from './main.js'
-import { setCounties, setMap } from './map.js?v4';
+import { setCounties, setMap } from './map.js?v5';
 import { setChart } from './chart.js';
  
    /**

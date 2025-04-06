@@ -160,15 +160,17 @@ import { highlightCounties, unhighlightCounties } from './map.js';
             .text(titleText);
     
         // data source link
+        const leftPadding = margin.left + 10; 
         svg.append("a")
             .attr("xlink:href", "https://www.countyhealthrankings.org/health-data/wisconsin/data-and-resources")
             .attr("target", "_blank")
             .append("text")
             .attr("class", "attribution")
-            .attr("x", svgWidth - margin.right)
-            .attr("y", 20)
-            .attr("text-anchor", "end")
-            .style("font-size", "0.8rem")
-            .style("fill", "#ccc")
+            .attr("x", leftPadding)   
+            .attr("y", 35)
+            .attr("text-anchor", "start")
+            .style("font-size", "0.7rem")
+            .style("fill", "#999")
             .text("Data Source");
+
     }

@@ -1,4 +1,4 @@
-import { setMap } from "./map.js?v1";
+import { setMap } from "./map.js?v5";
 // globals
 export const state = {
     map: null,

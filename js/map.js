@@ -30,7 +30,7 @@ export function setMap() {
       .rotate([90, 0, 0])
       .center([0, 44.6])
       .parallels([42, 195])
-      .scale(4000)
+      .scale(4500)
       .translate([svgWidth / 2, svgHeight / 2 - 50]);
 
     // set path generator
@@ -260,7 +260,7 @@ export function setCounties(countiesFeatures, map, path, breaksArray) {
                 .attr("height", bubbleHeight)
                 .attr("rx", 6)
                 .attr("ry", 6)
-                .style("fill", "white")
+                .style("fill", "rgba(255, 255, 255, 0.8)")
                 .style("stroke", "#999")
                 .style("stroke-width", 2);
         });
