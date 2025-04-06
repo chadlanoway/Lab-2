@@ -30,7 +30,7 @@ export function setMap() {
       .rotate([90, 0, 0])
       .center([0, 44.6])
       .parallels([42, 195])
-      .scale(5000)
+      .scale(4500)
       .translate([svgWidth / 2, svgHeight / 2 - 30]);
 
     // set path generator
