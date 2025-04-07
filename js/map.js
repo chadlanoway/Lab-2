@@ -202,13 +202,21 @@ export function setCounties(countiesFeatures, map, path, breaksArray) {
 
     // draw label lines and labels
     labelData.forEach(d => {
+        
+        // shrink line length
+        const dx = d.x - d.centroid[0];
+        const dy = d.y - d.centroid[1];
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        const shorten = 10;
+        const shrinkX = d.x - (dx / dist) * shorten;
+        const shrinkY = d.y - (dy / dist) * shorten;
         // line from county to label
         state.map.append("line")
             .attr("class", "county-callout")
             .attr("x1", d.centroid[0])
             .attr("y1", d.centroid[1])
-            .attr("x2", d.x)
-            .attr("y2", d.y)
+            .attr("x2", shrinkX)
+            .attr("y2", shrinkY)
             .attr("stroke", "#333")
             .attr("stroke-width", 1);
 
@@ -260,7 +268,7 @@ export function setCounties(countiesFeatures, map, path, breaksArray) {
                 .attr("height", bubbleHeight)
                 .attr("rx", 6)
                 .attr("ry", 6)
-                .style("fill", "rgba(255, 255, 255, 0.8)")
+                .style("fill", "rgba(255, 255, 255, 0.9)")
                 .style("stroke", "#999")
                 .style("stroke-width", 2);
         });
