@@ -97,7 +97,7 @@ import { highlightCounties, unhighlightCounties } from './map.js';
                 highlightCounties(d);
             })
             .on("mouseout", function () {
-                tooltip.transition().duration(200).style("opacity", 0);
+                state.tooltip.transition().duration(200).style("opacity", 0);
                 unhighlightCounties();
             });
     

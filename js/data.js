@@ -1,6 +1,6 @@
 import { state } from './main.js'
 import { setCounties, setMap } from './map.js?v5';
-import { setChart } from './chart.js?v1';
+import { setChart } from './chart.js?v2';
  
    /**
      * Processes the loaded CSV and TopoJSON data to render the map and chart.
