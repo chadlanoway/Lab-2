@@ -12,12 +12,6 @@ html, body {
     font-weight: bold;
 }
   
-.states {
-    fill: rgba(128,128,128,.2);
-    stroke: #333;
-    stroke-width: 0;
-  }
-
 .axis path,
 .axis line {
     fill: none;

@@ -86,6 +86,7 @@ import { setChart } from './chart.js?v1';
             .domain(breaksArray)
             .range(colorRange);
     }
+  
 
     // draw states
     state.map.append("path")
@@ -93,7 +94,8 @@ import { setChart } from './chart.js?v1';
         .attr("class", "states")
         .attr("d", state.path)
         .style("stroke", "#333")
-        .style("stroke-width", 0);
+        .style("fill", "rgba(128,128,128,.2)")
+        .style("stroke-width", 1);
 
     // draw counties
     setCounties(countiesGeo.features, state.map, state.path, breaksArray);
